@@ -26,11 +26,47 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
         main.cpp \
         calculatorgui.cpp \
-    calculatorbackend.cpp
+    calculatorbackend.cpp \
+    calculatorbackend.cpp \
+    calculatorgui.cpp \
+    main.cpp \
+    moc_calculatorgui.cpp
 
 HEADERS += \
         calculatorgui.h \
-    calculatorbackend.h
+    calculatorbackend.h \
+    calculatorbackend.h \
+    calculatorgui.h \
+    moc_predefs.h \
+    ui_calculatorgui.h
 
 FORMS += \
-        calculatorgui.ui
+        calculatorgui.ui \
+    calculatorgui.ui
+
+SUBDIRS += \
+    Calculator_GUI_REGEX_BASED.pro
+
+DISTFILES += \
+    .qmake.stash \
+    Calculator_GUI_REGEX_BASED.exe \
+    libgcc_s_dw2-1.dll \
+    libstdc++-6.dll \
+    libwinpthread-1.dll \
+    Qt5Core.dll \
+    Qt5Gui.dll \
+    Qt5Widgets.dll \
+    calculatorbackend.o \
+    calculatorgui.o \
+    main.o \
+    moc_calculatorgui.o \
+    Calculator_GUI_REGEX_BASED.pro.user \
+    Makefile \
+    Makefile.Debug \
+    Makefile.Release \
+    platforms/qminimal.dll \
+    platforms/qminimald.dll \
+    platforms/qoffscreen.dll \
+    platforms/qoffscreend.dll \
+    platforms/qwindows.dll \
+    platforms/qwindowsd.dll

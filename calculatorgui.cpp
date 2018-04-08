@@ -2,6 +2,7 @@
 #include "ui_calculatorgui.h"
 
 #include <QString>
+#include <QKeyEvent>
 
 CalculatorGui::CalculatorGui(QWidget *parent) :
     QMainWindow(parent),
